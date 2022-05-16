@@ -76,7 +76,7 @@ byte age = 10;
 
         int vienadojums = 5+5*2;
         int vienadojums = (5+5)*2;
-        
+
 
         System.out.println("Ja atlikums ir 0, tad para skaitlis" + b % 2);
 
