@@ -80,14 +80,14 @@ byte age = 10;
         int vienadojumsDivi = (5+5)*2;
 
 
-        System.out.println("Ja atlikums ir 0, tad para skaitlis" + b % 2);
+        System.out.println("Ja atlikums ir 0, tad para skaitlis " + b % 2);
 
 
         System.out.println(pirmaisSkaitlis + "+" + "(" + otraisSkaitlis + ")" + "=" + summa);
-        System.out.println("starpiba" + starpiba);
-        System.out.println("dalijums" + dalijums);
-        System.out.println("reizinajums" + reizinajums);
-        System.out.println("atlikums" + atlikums);
+        System.out.println("starpiba " + starpiba);
+        System.out.println("dalijums " + dalijums);
+        System.out.println("reizinajums " + reizinajums);
+        System.out.println("atlikums " + atlikums);
 
     }
 }
