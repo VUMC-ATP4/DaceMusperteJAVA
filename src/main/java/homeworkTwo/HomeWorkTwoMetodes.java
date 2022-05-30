@@ -17,7 +17,7 @@ public class HomeWorkTwoMetodes {
         System.out.println(summa);
 
         System.out.println(average(16, 4, 9));
-        
+
 
     }
 
@@ -52,5 +52,6 @@ public class HomeWorkTwoMetodes {
     static double average(double c, double d, double e){
         return (c + d + e)/3;
     }
+
 
 }
