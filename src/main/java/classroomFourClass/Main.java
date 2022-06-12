@@ -1,4 +1,4 @@
-package classroomFour;
+package classroomFourClass;
 
 public class Main {
     public static void main(String[] args) {

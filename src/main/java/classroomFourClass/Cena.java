@@ -1,4 +1,4 @@
-package classroomFour;
+package classroomFourClass;
 
 public class Cena {
     int cena;

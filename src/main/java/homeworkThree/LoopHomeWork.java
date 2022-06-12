@@ -17,9 +17,10 @@ public class LoopHomeWork {
         int number = scanner.nextInt();
         int summa = 0;
         while(number >= 0 && summa <= 99){
-            summa = summa + number;
             System.out.println("Ieraksti skaitli");
             number = scanner.nextInt();
+            summa = summa + number;
+            System.out.println("Skaitļu summa ir " + summa);
         }
         System.out.println("Gatavs");
 
@@ -136,9 +137,8 @@ public class LoopHomeWork {
         for(int array=2; array<=200; array++)
         {
             if(array%2 == 0)
-                System.out.println(array);
-//            System.out.println(Arrays.toString(array));
-        }
+                System.out.print(array);
+               }
 
         System.out.println("===============================");
 
