@@ -139,7 +139,7 @@ public class LoopHomeWork {
             if(array%2 == 0)
                 System.out.print(array);
                }
-
+        System.out.println(" ");
         System.out.println("===============================");
 
 // 5.uzdevums
@@ -163,13 +163,47 @@ public class LoopHomeWork {
 // Ja parole nav pareiza, jāizvada uz ekrāna:  “Nepareizs PIN, mēģiniet vēlreiz.”.
 // Kad mēģinājumi beigušies, uz ekrāna jāizvada:  “Atvainojiet, bet jūs esat bloķēts”.
 
-
+//        enterPIN();
+//        public static void enterPin() {
+//            Scanner scanner = new Scanner(System.in);
+//            int PIN = 1234;
+//            int meginajumuSkaits = 0;
+//
+//            while (meginajumuSkaits < 3) {
+//                System.out.println("Ievadi PIN");
+//                if (PIN == scanner.nextInt()) {
+//                    System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ");
+//                    break;
+//                }
+//                if (meginajumuSkaits == 3) {
+//                    System.out.println("Atvainojiet, bet jūs esat bloķēts");
+//                    break;
+//                }
+//                System.out.println("Nepareizs PIN, mēģiniet vēlreiz");
+//                meginajumuSkaits++;
+//            }
+//
+//        }
 
         final int PIN = 3891;
         int lietotajaPin;
         int meginajumuSkaits = 0;
         System.out.println("Ievadi PIN:");
         lietotajaPin = scanner.nextInt();
+
+        while (meginajumuSkaits < 3) {
+            System.out.println("Ievadi PIN");
+            if (PIN == scanner.nextInt()) {
+                System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ!");
+                break;
+            }
+            if (meginajumuSkaits ==3) {
+                System.out.println("Atvainojiet, bet jūs esat bloķēts!");
+                break;
+            }
+            System.out.println("Nepareizs PIN, mēģiniet vēlreiz!");
+            meginajumuSkaits++;
+        }
 
 //        do{
 //            System.out.println("Ievadi PIN:");
