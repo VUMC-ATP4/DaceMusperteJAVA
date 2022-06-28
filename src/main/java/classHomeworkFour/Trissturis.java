@@ -75,7 +75,6 @@ public class Trissturis {
         else{
             return false;
         }
-
     }
 
 
