@@ -3,16 +3,17 @@ package oopHomeworkFive;
 public class Customer {
 
     private String name;
-    private boolean member = false;
+    private Boolean member = false;
     private String memberType;
 
 
-    public String getName() {
-        return name;
-    }
 
     public Customer (String name){
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public boolean isMember() {
@@ -28,6 +29,14 @@ public class Customer {
     }
 
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", member=" + member +
+                ", memberType='" + memberType + '\'' +
+                '}';
+    }
 
 
 }

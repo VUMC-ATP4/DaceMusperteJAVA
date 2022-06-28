@@ -8,14 +8,15 @@ import java.util.Scanner;
 public class LoopHomeWork {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
 // 1.uzdevums
 // Uzrakstiet programmu, kas no lietotāja nolasa veselus skaitļus un apstājas,
 //  izvadot uz ekrānu tekstu:  “Gatavs”, kad šo vērtību summa pārsniedz 100
 
         System.out.println("Ieraksti skaitli");
+        int summa=0;
+        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        int summa = 0;
+
         while(number >= 0 && summa <= 99){
             System.out.println("Ieraksti skaitli");
             number = scanner.nextInt();
@@ -30,7 +31,9 @@ public class LoopHomeWork {
 // Tajā pašā klasē un main metodē zemāk uzrakstīt programmu, kas nolasa veselu skaitli
 // un izvada uz ekrāna, vai šis skaitlis ir pirmskaitlis vai nē.
 
-        int i,m=0,flag=0;
+        int i;
+        int m=0;
+        int flag=0;
         int n=2;//it is the number to be checked
         m=n/2;
         if(n==0||n==1){
@@ -44,7 +47,7 @@ public class LoopHomeWork {
                 }
             }
             if(flag==0)  { System.out.println(n+" ir pirmskaitlis"); }
-        }//end of else
+        }
 
         System.out.println("===============================");
 
@@ -147,12 +150,13 @@ public class LoopHomeWork {
 //a. Tā ir metode, kura kā parametru pieņem veselu skaitli.
 //b. Piemērs: Faktoriāls 4 = 4 * 3 * 2 * 1 = 24.
 
-        int k,fact=1;
-        int cipars=4;//It is the number to calculate factorial.
+        int k;
+        int faktorials=1;
+        int cipars=4;
         for(k=1;k<=cipars;k++){
-            fact=fact*k;
+            faktorials=faktorials*k;
         }
-        System.out.println("Factorial of "+cipars+" is: "+fact);
+        System.out.println("Factorial of "+cipars+" is: "+faktorials);
 
         System.out.println("===============================");
 
@@ -163,45 +167,26 @@ public class LoopHomeWork {
 // Ja parole nav pareiza, jāizvada uz ekrāna:  “Nepareizs PIN, mēģiniet vēlreiz.”.
 // Kad mēģinājumi beigušies, uz ekrāna jāizvada:  “Atvainojiet, bet jūs esat bloķēts”.
 
-//        enterPIN();
-//        public static void enterPin() {
-//            Scanner scanner = new Scanner(System.in);
-//            int PIN = 1234;
-//            int meginajumuSkaits = 0;
-//
-//            while (meginajumuSkaits < 3) {
-//                System.out.println("Ievadi PIN");
-//                if (PIN == scanner.nextInt()) {
-//                    System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ");
-//                    break;
-//                }
-//                if (meginajumuSkaits == 3) {
-//                    System.out.println("Atvainojiet, bet jūs esat bloķēts");
-//                    break;
-//                }
-//                System.out.println("Nepareizs PIN, mēģiniet vēlreiz");
-//                meginajumuSkaits++;
-//            }
-//
-//        }
 
         final int PIN = 3891;
         int lietotajaPin;
         int meginajumuSkaits = 0;
-        System.out.println("Ievadi PIN:");
-        lietotajaPin = scanner.nextInt();
 
-        while (meginajumuSkaits < 3) {
-            System.out.println("Ievadi PIN");
-            if (PIN == scanner.nextInt()) {
-                System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ!");
-                break;
-            }
+        while (meginajumuSkaits <= 3) {
+
             if (meginajumuSkaits ==3) {
                 System.out.println("Atvainojiet, bet jūs esat bloķēts!");
                 break;
             }
+            System.out.println("Ievadi PIN:");
+            lietotajaPin = scanner.nextInt();
+            if (PIN == lietotajaPin) {
+                System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ!");
+                break;
+            }
+            else {
             System.out.println("Nepareizs PIN, mēģiniet vēlreiz!");
+            }
             meginajumuSkaits++;
         }
 
