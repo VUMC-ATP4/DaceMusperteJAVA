@@ -20,6 +20,8 @@ public class Customer {
         return member;
     }
 
+    public String getMemberType(){ return memberType; }
+
     public void setMember(boolean member) {
         this.member = member;
     }
@@ -37,6 +39,5 @@ public class Customer {
                 ", memberType='" + memberType + '\'' +
                 '}';
     }
-
 
 }
